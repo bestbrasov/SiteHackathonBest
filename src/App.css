@@ -203,11 +203,11 @@ body::-webkit-scrollbar {
   flex-direction: column;
   justify-content: center;
 
-  /* ADAUGĂ ACEASTĂ LINIE: */
-  align-items: flex-start !important;
-  /* Asta va trage butonul în stânga, sub text */
+  /* MODIFICAREA CHEIE: */
+  align-items: center;
+  /* <--- Asta va centra totul pe orizontală */
+
   padding-left: 20px;
-  /* Oferă puțin spațiu între poză și text */
 }
 
 /* Suprascriem alinierea pentru textul din dreapta */
@@ -278,14 +278,17 @@ body::-webkit-scrollbar {
   width: 100%;
 }
 
+
 #About h2 {
   background: linear-gradient(to right, #A020F0, #C71A5C);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
-  /* Dacă vrei să fie și mai "tech", poți adăuga un mic glow */
   filter: drop-shadow(0 0 5px rgba(160, 32, 240, 0.2));
+
+  text-align: center;
+  /* <--- ADAUGĂ ACEASTĂ LINIE */
 }
 
 .sectiune-doua-coloane {
