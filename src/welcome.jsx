@@ -95,7 +95,7 @@ export default function WelcomeSection() {
 
         <p className="subtitle">It looks like you haven't registered yet...</p>
         <button
-          onClick={() => window.open('https://docs.google.com/forms/d/1seU2srL8otKDqQ7AXGg2-vEM6MLuQu1gyOXec6mrDPc/edit', '_blank')}
+          onClick={() => window.open('https://forms.gle/dtnGUsqeYac17s7j8', '_blank')}
           className="home-button"
         >
           Register
