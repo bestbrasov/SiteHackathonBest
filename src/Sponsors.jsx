@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./App.css"; // main CSS
 
 // Sponsor images
-import sponsor1 from "./assets/Logo_Tremend_Gri.png";
+import sponsor1 from "./assets/tremend-logo.png";
 import sponsor2 from "./assets/logo_cbc-01.png";
 import sponsor3 from "./assets/logo_universitate.png";
 import sponsor4 from "./assets/crucea_rosie_logo.png";
