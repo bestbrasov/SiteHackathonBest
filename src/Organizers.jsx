@@ -1,10 +1,5 @@
-// src/Organizers.jsx
-
-// Asigură-te că imporți fișierul tău CSS principal
 import './App.css';
 
-// --- IMPORTĂ POZELE AICI ---
-// Schimbă numele fișierelor cu cele reale
 import prez from './assets/prez-test2.png';
 import mo from './assets/mo-test.png';
 import gd from './assets/gd.jpg';
@@ -17,15 +12,12 @@ import pax from './assets/pax-test.png';
 import lg from './assets/lg.JPG';
 
 
-// import pozaPersoana3 from './assets/persoana3.jpg';
-// ... importă toate celelalte poze
 
 export default function Organizers() {
   return (
     <section id="Organizers">
       <h1>Organizers</h1>
       <div className='content-wrapper'>
-        {/* --- PRIMUL RÂND: 2 PERSOANE --- */}
         <div className="organizer-row">
           <div className="organizer-card">
             <img src={prez} alt="prez" />
@@ -41,9 +33,7 @@ export default function Organizers() {
           </div>
         </div>
 
-        {/* --- AL DOILEA RÂND: 4 PERSOANE --- */}
         <div className="organizer-row">
-          {/* Adaugă aici 4 persoane, la fel ca mai sus */}
           <div className="organizer-card">
             <img src={gd} alt="gd" />
             <h3>Hriscovschi Adelina</h3>
@@ -66,9 +56,7 @@ export default function Organizers() {
           </div>
         </div>
 
-        {/* --- AL TREILEA RÂND: 4 PERSOANE --- */}
         <div className="organizer-row">
-          {/* Adaugă aici încă 4 persoane */}
           <div className="organizer-card">
             <img src={fr} alt="fr" />
             <h3>Stănescu Paul</h3>
