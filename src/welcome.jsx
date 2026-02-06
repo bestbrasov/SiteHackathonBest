@@ -94,7 +94,7 @@ export default function WelcomeSection() {
         </div>
 
         <p className="subtitle">It looks like you haven't registered for the Hackathon yet...</p>
-        <p className="subtitle">Secure your spot before they're all gone! Applications close on February 24, 23:59.</p>
+        <p className="subtitle">Secure your spot before they're all gone! Applications close on <strong>February 24, 23:59</strong>.</p>
         <button
           onClick={() => window.open('https://forms.gle/dtnGUsqeYac17s7j8', '_blank')}
           className="home-button"
