@@ -85,7 +85,7 @@ export default function WelcomeSection() {
       <canvas ref={canvasRef} className="matrix-canvas" />
       <div className="content">
         <div className="error-wrapper">
-          <h2 className="error-code">Error</h2>
+          <h2 className="error-code">One more step!</h2>
           <img
             src={dinoGif}
             alt="Dino"
@@ -93,7 +93,8 @@ export default function WelcomeSection() {
           />
         </div>
 
-        <p className="subtitle">It looks like you haven't registered yet...</p>
+        <p className="subtitle">It looks like you haven't registered for the Hackathon yet...</p>
+        <p className="subtitle">Secure your spot before they're all gone! Applications close on February 24, 23:59.</p>
         <button
           onClick={() => window.open('https://forms.gle/dtnGUsqeYac17s7j8', '_blank')}
           className="home-button"
