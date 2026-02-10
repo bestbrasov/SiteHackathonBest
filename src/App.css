@@ -22,14 +22,12 @@ body::-webkit-scrollbar {
   margin-right: auto;
 }
 
-
 #About h1,
 #About h2,
 #Prizes h1,
 #Organizers h1,
 #Sponsors h1,
 .footer-copyright a,
-.prize-box:hover,
 .prize-amount {
   background: linear-gradient(to right, #A020F0, #C71A5C);
   -webkit-background-clip: text;
@@ -39,7 +37,6 @@ body::-webkit-scrollbar {
   filter: drop-shadow(0 0 5px rgba(160, 32, 240, 0.2));
 }
 
-/* --- Butoane --- */
 .home-button {
   background: linear-gradient(to right, #A020F0, #C71A5C);
   color: white;
@@ -86,7 +83,6 @@ body::-webkit-scrollbar {
   border-color: rgba(199, 26, 92, 0.5);
 }
 
-/* --- Layout Coloane & Grid --- */
 .sectiune-doua-coloane {
   display: flex;
   align-items: center;
@@ -161,10 +157,20 @@ body::-webkit-scrollbar {
   border-radius: 10px;
   border-top: 3px solid transparent;
   transition: transform 0.3s ease, border-top-color 0.3s ease;
+  cursor: pointer;
 }
 
 .prize-box:hover {
   transform: translateY(-10px);
+  border-top-color: #C71A5C;
+}
+
+.prize-box:hover .prize-details,
+.prize-box:hover .prize-title {
+  background: linear-gradient(to right, #A020F0, #C71A5C);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .organizer-card {
@@ -191,20 +197,19 @@ body::-webkit-scrollbar {
   font-family: 'Courier New', Courier, monospace;
   color: #bbbbbb;
   font-size: 0.82rem !important;
-  white-space: nowerap;
+  white-space: nowrap;
   overflow: visible;
   letter-spacing: -0.2px;
   line-height: 1.4;
   margin: 5px 0 0 0;
 }
 
-
 .error-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: px;
+  gap: 10px;
   margin-bottom: 20px;
   margin-left: 15px;
 }
@@ -297,7 +302,6 @@ body::-webkit-scrollbar {
   cursor: pointer;
   animation: bounce 2s infinite;
 }
-
 
 #Welcome canvas {
   width: 100%;
@@ -421,15 +425,28 @@ body::-webkit-scrollbar {
 }
 
 .prize-amount {
-  font-size: 5rem;
-  font-weight: bold;
+  font-size: 2.2rem;
   font-family: 'Courier New', Courier, monospace;
+}
+
+.prize-details {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fbcfe8;
+  opacity: 0.9;
+  margin-top: -5px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  display: block;
 }
 
 .prize-title {
   font-size: 1.5rem;
   color: #ffffff;
   margin-top: 10px;
+  transition: all 0.3s ease;
 }
 
 .prize-bonus {
@@ -504,7 +521,6 @@ body::-webkit-scrollbar {
   transform: translateY(-3px);
 }
 
-
 @keyframes fadeInContent {
   from {
     opacity: 0;
@@ -542,22 +558,15 @@ body::-webkit-scrollbar {
   }
 }
 
-
-
 @media (max-width: 900px) {
-  .text-align-right {
-    text-align: left;
-  }
-
   .prizes-grid {
     flex-direction: column;
     align-items: center;
   }
 
   .prize-box {
-    width: 100%;
-    max-width: 400px;
-    padding: 0%;
+    width: 90%;
+    margin: 10px auto;
   }
 }
 
@@ -567,26 +576,15 @@ body::-webkit-scrollbar {
   }
 
   .error-code {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
   .subtitle {
     font-size: 1.2rem;
-    margin-bottom: 40px;
   }
 
   .prize-amount {
-    font-size: 3.5rem;
-  }
-
-  .prize-title {
-    font-size: 1.2rem;
-  }
-
-  .info-box {
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
+    font-size: 2.2rem;
   }
 
   .sectiune-doua-coloane {

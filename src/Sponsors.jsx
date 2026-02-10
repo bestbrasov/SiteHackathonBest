@@ -6,8 +6,11 @@ import sponsor1 from "./assets/tremend-logo.png";
 import sponsor2 from "./assets/logo_cbc-01.png";
 import sponsor3 from "./assets/logo_universitate.png";
 import sponsor4 from "./assets/crucea_rosie_logo.png";
+import sponsor5 from "./assets/wurst_house.png";
+import sponsor6 from "./assets/burn logo - transparent.png";
+import sponsor7 from "./assets/crispy_store.png";
 
-const sponsors = [sponsor1, sponsor2, sponsor3, sponsor4];
+const sponsors = [sponsor1, sponsor2, sponsor3, sponsor4, sponsor5, sponsor6, sponsor7];
 
 export default function Sponsors() {
   const sponsorScrollerRef = useRef(null);
