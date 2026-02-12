@@ -85,7 +85,7 @@ export default function WelcomeSection() {
       <canvas ref={canvasRef} className="matrix-canvas" />
       <div className="content">
         <div className="error-wrapper">
-          <h2 className="error-code">One more step!</h2>
+          <h2 className="error-code">Registration Full!</h2>
           <img
             src={dinoGif}
             alt="Dino"
@@ -93,13 +93,13 @@ export default function WelcomeSection() {
           />
         </div>
 
-        <p className="subtitle">It looks like you haven't registered for the Hackathon yet...</p>
-        <p className="subtitle">Secure your spot before they're all gone! Applications close on <strong>February 24, 23:59</strong>.</p>
+        <p className="subtitle">Wow! Thank you for the incredible interest. We've officially reached our maximum number of participants.</p>
+        <p className="subtitle">Don't worry! A waiting list will be opened soon. Check back shortly to secure a backup spot in case of cancellations.</p>
         <button
           onClick={() => window.open('https://forms.gle/dtnGUsqeYac17s7j8', '_blank')}
           className="home-button"
         >
-          Register
+          Waiting List Soon
         </button>
         <a className="learn-more" href="#About">Learn more</a>
       </div>
