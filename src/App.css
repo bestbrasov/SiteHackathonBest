@@ -571,16 +571,55 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
+  .content {
+    padding-top: 20vh !important;
+    width: 100% !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    box-sizing: border-box !important;
+  }
+
+  h1,
+  .content h1 {
+    font-size: 2.3rem !important;
+    line-height: 1.15 !important;
+    margin-bottom: 30px !important;
+    width: 100% !important;
+  }
+
+  .subtitle,
+  .content p {
+    font-size: 0.95rem !important;
+    width: 100% !important;
+    margin: 20px 0 !important;
+    padding: 0 10px !important;
+    line-height: 1.6 !important;
+  }
+
+  .home-button {
+    display: block !important;
+    margin: 35px auto 20px auto !important;
+    width: 90% !important;
+    max-width: 320px !important;
+    padding: 18px 30px !important;
+    font-size: 1.2rem !important;
+  }
+
+  .learn-more {
+    display: block !important;
+    margin: 15px auto 50px auto !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+    width: 100% !important;
+    font-size: 1.1rem !important;
+  }
+
+  .dino-icon {
+    display: none !important;
   }
 
   .error-code {
     font-size: 4rem;
-  }
-
-  .subtitle {
-    font-size: 1.2rem;
   }
 
   .prize-amount {
@@ -589,5 +628,9 @@ body::-webkit-scrollbar {
 
   .sectiune-doua-coloane {
     flex-direction: column;
+  }
+
+  .scroll-down-arrow {
+    bottom: 30px !important;
   }
 }
