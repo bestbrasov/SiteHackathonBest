@@ -94,12 +94,12 @@ export default function WelcomeSection() {
         </div>
 
         <p className="subtitle">Wow! Thank you for the incredible interest. We've officially reached our maximum number of participants.</p>
-        <p className="subtitle">Don't worry! A waiting list will be opened soon. Check back shortly to secure a backup spot in case of cancellations.</p>
+        <p className="subtitle">Don't lose hope! Join our waiting list below and we will contact you if a spot becomes available.</p>
         <button
-          onClick={() => window.open('https://forms.gle/dtnGUsqeYac17s7j8', '_blank')}
+          onClick={() => window.open('https://forms.gle/tayug8VPAoxo6mdR9', '_blank')}
           className="home-button"
         >
-          Waiting List Soon
+          Join Waiting List
         </button>
         <a className="learn-more" href="#About">Learn more</a>
       </div>
