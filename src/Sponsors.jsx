@@ -9,8 +9,11 @@ import sponsor4 from "./assets/crucea_rosie_logo.png";
 import sponsor5 from "./assets/wurst_house.png";
 import sponsor6 from "./assets/burn logo - transparent.png";
 import sponsor7 from "./assets/crispy_store.png";
+import sponsor8 from "./assets/pizzaiolo_logo.png";
+import sponsor9 from "./assets/Logo_Mapizza.png";
 
-const sponsors = [sponsor1, sponsor2, sponsor3, sponsor4, sponsor5, sponsor6, sponsor7];
+
+const sponsors = [sponsor1, sponsor2, sponsor3, sponsor4, sponsor5, sponsor6, sponsor7, sponsor8, sponsor9];
 
 export default function Sponsors() {
   const sponsorScrollerRef = useRef(null);
